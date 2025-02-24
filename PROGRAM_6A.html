@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 10px 25px;
+            font-size: 16px;
+            border-color: rgb(0, 0, 0);
+            border-radius: 50px;
+            background-color: rgb(0, 136, 255);
+        }
+    </style>
+</head>
+<body>
+    <script src="6a.js"></script>
+    <h1>JavaScript embedding Systems example</h1>
+    <p id="6a_program">This text will be changed with Internal JavaScript</p>
+    <button onclick="changeInnerText()">Change text (Internal JS)</button>
+    <p id="6a_program">This text will be changed with External JavaScript</p>
+    <button onclick="changeouterText()">Change text (External JS)</button>
+<script>
+    function changeInnerText() {
+        document.getElementById("6a_program").innerHTML = "Text Changed!";
+    }
+    function changeouterText() {
+        document.getElementById("6a_program").outerHTML = "Text Changed!";
+    }
+</script>
+</body>
+</html>
