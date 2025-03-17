@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    button {
+            padding: 15px 15px;
+            background-color: #5d70ad;
+            color: rgb(0, 153, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+    }
+    </style>
+</head>
+<body style="text-align: center;">
+    <h1 style="text-align: center;">Find The Largest Numbers Among Three</h1>
+    <button onclick="Find()">enter numbers</button>
+    <script>
+    function Find(){
+        var V1 = prompt("Please enter Num 1 :"); 
+        var V2 = prompt("Please enter Num 2 :"); 
+        var V3 = prompt("Please enter Num 3 :");
+        if(V1>V2 & V1>V3) {
+            alert(V1+"  is the largest");
+        }
+        else if(V2>V1 & V2>V3) {
+            alert(V2+"  is the largest");
+        }
+        else {
+            alert(V3+"  is the largest");
+        }
+    }
+    </script>
+</body>
+</html>
